@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Damilolaa — Model · Creative · Fashion Personality</title>
+<meta name="description" content="Damilolaa — editorial portfolio. Fashion campaigns, creative direction and films.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="grain"></div>
+<div class="vignette"></div>
+<div class="cursor" id="cursor"></div>
+<div class="progress" id="progress"></div>
+
+<!-- ============ SPLASH ============ -->
+<div class="splash" id="splash">
+  <video autoplay muted loop playsinline preload="metadata" poster="assets/hero-main.png">
+    <source src="assets/video-dami.mp4" type="video/mp4">
+  </video>
+  <div class="splash-inner">
+    <div class="eyebrow">Damilolaa Portfolio — Est. Lagos</div>
+    <h1><span>DAMI</span><span>LOLAA</span></h1>
+    <div class="sub">Model · Creative · Fashion Personality</div>
+    <button class="enter-btn" id="enterBtn"><span>Enter Portfolio</span></button>
+    <div class="loader-bar"><i id="loaderFill"></i></div>
+    <div class="loader-pct" id="loaderPct">Loading 0%</div>
+  </div>
+</div>
+
+<!-- ============ SPINE ============ -->
+<div class="spine">
+  <div class="mark">DAMILOLAA — EDITORIAL №01</div>
+  <div class="folio">
+    <span class="num" id="folioNum">01</span>
+    <div class="bar"><i id="folioBar"></i></div>
+    <span>09</span>
+  </div>
+</div>
+
+<!-- ============ TOP NAV ============ -->
+<header class="topnav" id="topnav">
+  <a href="#home" class="word">Damilolaa</a>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#brands">Brands</a>
+    <a href="#films">Films</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn">Menu</button>
+</header>
+
+<div class="drawer" id="drawer">
+  <button class="close" id="drawerClose">Close ✕</button>
+  <a href="#home">Home</a>
+  <a href="#portfolio">Portfolio</a>
+  <a href="#brands">Brands</a>
+  <a href="#films">Films</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <div class="hero-media"><img src="assets/hero-main.png" alt="Damilolaa editorial hero"></div>
+  <div class="hero-content">
+    <div class="kicker"><span class="dash"></span> </div>
+    <h1 class="serif">DAMILOLAA</h1>
+    <p class="role">Model <b>·</b> Creative <b>·</b> Fashion Personality</p>
+    <div class="hero-ctas">
+      <a href="#portfolio" class="ghost-btn solid">View Campaigns</a>
+      <a href="#films" class="ghost-btn">Watch Films</a>
+      <a href="#contact" class="ghost-btn">Contact</a>
+    </div>
+  </div>
+  <div class="scroll-cue">Scroll <div class="line"><i></i></div></div>
+</section>
+
+<!-- ============ PORTFOLIO ============ -->
+<section class="section" id="portfolio">
+  <div class="section-head reveal">
+    <div>
+      <div class="eyebrow">№ 02 — The Work</div>
+      <h2 class="serif">Portfolio</h2>
+    </div>
+    <p class="note">A running record of campaigns, editorial sittings and creative direction — shot across Lagos and beyond.</p>
+  </div>
+
+  <div class="filter-row reveal" id="filterRow">
+    <button class="active" data-filter="all">All</button>
+    <button data-filter="streetwear">Streetwear</button>
+    <button data-filter="editorial">Editorial</button>
+    <button data-filter="luxury">Luxury</button>
+    <button data-filter="creative">Creative Direction</button>
+    <button data-filter="commercial">Commercial</button>
+    <button data-filter="campaign">Fashion Campaigns</button>
+  </div>
+
+  <div class="masonry reveal" id="masonry"></div>
+</section>
+
+<!-- ============ BRANDS ============ -->
+<section id="brands">
+  <div class="section-head reveal brand-section-head">
+    <div>
+      <div class="eyebrow">№ 03 — Campaigns</div>
+      <h2 class="serif">Brand Highlights</h2>
+    </div>
+    <p class="note">Nine collaborations. Each spread tells the story behind the shoot — direction, identity, the face behind the brand.</p>
+  </div>
+  <div id="brandList"></div>
+</section>
+
+<!-- ============ AGENCY ============ -->
+<section class="section" id="agency">
+  <div class="section-head reveal">
+    <div>
+      <div class="eyebrow">№ 04 — Representation</div>
+      <h2 class="serif">Agency</h2>
+    </div>
+    <p class="note">Currently represented for bookings, campaigns and creative direction across Lagos and West Africa.</p>
+  </div>
+  <div class="agency-card reveal">
+    <div>
+      <div class="glogo">DXC <span>Models</span> MGMT</div>
+      <p class="agency-desc">
+        Full representation for editorial, commercial and brand campaign bookings. Based in Lagos, working across Nigeria's fashion and creative scene.
+      </p>
+    </div>
+    <div>
+      <div class="grow"><span>Representation</span><span>DXC Models MGMT</span></div>
+      <div class="grow"><span>Territory</span><span>Lagos · West Africa</span></div>
+      <div class="grow"><span>Bookings</span><span>Open for 2026</span></div>
+      <div class="grow"><span>Contact</span><span>damilolaa050@gmail.com</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FILMS ============ -->
+<section class="section" id="films">
+  <div class="section-head reveal">
+    <div>
+      <div class="eyebrow">№ 05 — Motion</div>
+      <h2 class="serif">Films</h2>
+    </div>
+    <p class="note">Fashion films — runway edits, campaign visuals and behind-the-scenes, graded in black and white.</p>
+  </div>
+  <div class="films-grid reveal">
+    <div class="film-card" data-film="runway">
+      <video src="assets/video-streetwear.mp4" muted loop playsinline preload="metadata" poster="assets/streetwear-01.jpg"></video>
+      <div class="play"><svg viewBox="0 0 24 24"><polygon points="5,3 21,12 5,21"/></svg></div>
+      <div class="meta"><div class="ftype">Runway Film</div><h4 class="serif">On The Line</h4></div>
+    </div>
+    <div class="film-card" data-film="campaign">
+      <video src="assets/video-oldmoney.mp4" muted loop playsinline preload="metadata" poster="assets/oldmoney-01.jpg"></video>
+      <div class="play"><svg viewBox="0 0 24 24"><polygon points="5,3 21,12 5,21"/></svg></div>
+      <div class="meta"><div class="ftype">Campaign Visual</div><h4 class="serif">Old Money</h4></div>
+    </div>
+    <div class="film-card" data-film="editorial">
+      <video src="assets/video-editorial.mp4" muted loop playsinline preload="metadata" poster="assets/editorial-02.jpg"></video>
+      <div class="play"><svg viewBox="0 0 24 24"><polygon points="5,3 21,12 5,21"/></svg></div>
+      <div class="meta"><div class="ftype">Editorial Short Film</div><h4 class="serif">Paper Moon</h4></div>
+    </div>
+    <div class="film-card" data-film="bts">
+      <video src="assets/video-dami.mp4" muted loop playsinline preload="metadata" poster="assets/hope-02.png"></video>
+      <div class="play"><svg viewBox="0 0 24 24"><polygon points="5,3 21,12 5,21"/></svg></div>
+      <div class="meta"><div class="ftype">Behind The Scenes</div><h4 class="serif">The Reel</h4></div>
+    </div>
+  </div>
+  <p class="films-note">Hover a film to preview — click for fullscreen playback.</p>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section" id="about">
+  <div class="section-head reveal">
+    <div>
+      <div class="eyebrow">№ 06 — Profile</div>
+      <h2 class="serif">About</h2>
+    </div>
+  </div>
+  <div class="about-grid reveal">
+    <div class="pic"><img src="assets/hope-01.png" alt="Damilolaa portrait"></div>
+    <div class="about-copy">
+      <p><b>Damilolaa</b> is a Lagos-based commercial model and digital creator known for his calm presence, strong visual identity and ability to bring fashion campaigns to life.</p>
+      <p>His work spans commercial advertising, fashion editorials, lifestyle campaigns and streetwear campaigns across Nigeria and Africa.</p>
+      <p>His philosophy is simple: <b>presence over performance.</b> Every shoot is approached as a character study — mood, posture and light built around the story the brand is trying to tell, not just the product.</p>
+      <p>From Lagos streetwear sets to luxury "Old Money" editorials, brand work with DXC, Lego, Green Yankee's and SBR, and creative direction projects under Hope — the throughline is the same: cinematic restraint, monochrome mood, and a face that holds a frame.</p>
+      <div class="stat-row">
+        <div class="stat"><div class="n serif">9</div><div class="l">Brand Campaigns</div></div>
+        <div class="stat"><div class="n serif">27+</div><div class="l">Editorial Frames</div></div>
+        <div class="stat"><div class="n serif">2026</div><div class="l">Open For Bookings</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section" id="contact">
+  <div class="contact-wrap reveal">
+    <div>
+      <div class="eyebrow">№ 07 — Get In Touch</div>
+      <h2 class="serif">Let's Make<br>Something.</h2>
+      <div class="social-list">
+        <a href="https://www.instagram.com/gramdamilola___?igsh=b3kwaTYycGQ2Yzdn&utm_source=qr" target="_blank" rel="noopener noreferrer">Instagram <span>↗</span></a>
+        <a href="https://www.tiktok.com/@oba_lola07?_r=1&_t=ZS-97F11d8Rej6" target="_blank" rel="noopener noreferrer">TikTok <span>↗</span></a>
+        <a href="mailto:damilolaa050@gmail.com">damilolaa050@gmail.com <span>↗</span></a>
+      </div>
+    </div>
+    <form id="contactForm">
+      <div class="form-field"><label for="c_name">Name</label><input id="c_name" name="name" type="text" required></div>
+      <div class="form-field"><label for="c_email">Email</label><input id="c_email" name="email" type="email" required></div>
+      <div class="form-field"><label for="c_project">Project / Brand</label><input id="c_project" name="project" type="text"></div>
+      <div class="form-field"><label for="c_message">Message</label><textarea id="c_message" name="message" rows="4" required></textarea></div>
+      <button class="submit-btn" type="submit">Send Inquiry</button>
+      <div class="form-note" id="formNote">For bookings, please include dates, deliverables and budget range.</div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="word serif">Damilolaa</div>
+  <div class="copy">© 2026 Damilolaa. All rights reserved. Lagos, Nigeria.</div>
+</footer>
+
+<div class="float-social">
+  <a href="https://www.instagram.com/gramdamilola___?igsh=b3kwaTYycGQ2Yzdn&utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2c2.7 0 3 .01 4.1.06 1.1.05 1.8.22 2.4.46.65.25 1.2.6 1.7 1.1.5.5.85 1.05 1.1 1.7.24.6.41 1.3.46 2.4.05 1.1.06 1.4.06 4.1s-.01 3-.06 4.1c-.05 1.1-.22 1.8-.46 2.4-.25.65-.6 1.2-1.1 1.7-.5.5-1.05.85-1.7 1.1-.6.24-1.3.41-2.4.46-1.1.05-1.4.06-4.1.06s-3-.01-4.1-.06c-1.1-.05-1.8-.22-2.4-.46a4.6 4.6 0 0 1-1.7-1.1 4.6 4.6 0 0 1-1.1-1.7c-.24-.6-.41-1.3-.46-2.4C2 15 2 14.7 2 12s.01-3 .06-4.1c.05-1.1.22-1.8.46-2.4.25-.65.6-1.2 1.1-1.7.5-.5 1.05-.85 1.7-1.1.6-.24 1.3-.41 2.4-.46C9 2 9.3 2 12 2zm0 1.8c-2.66 0-2.97.01-4.02.06-.95.04-1.46.2-1.8.33-.45.17-.78.38-1.12.72-.34.34-.55.67-.72 1.12-.13.34-.29.85-.33 1.8C4 8.83 4 9.14 4 12s.01 2.97.06 4.02c.04.95.2 1.46.33 1.8.17.45.38.78.72 1.12.34.34.67.55 1.12.72.34.13.85.29 1.8.33 1.05.05 1.36.06 4.02.06s2.97-.01 4.02-.06c.95-.04 1.46-.2 1.8-.33.45-.17.78-.38 1.12-.72.34-.34.55-.67.72-1.12.13-.34.29-.85.33-1.8.05-1.05.06-1.36.06-4.02s-.01-2.97-.06-4.02c-.04-.95-.2-1.46-.33-1.8a3 3 0 0 0-.72-1.12 3 3 0 0 0-1.12-.72c-.34-.13-.85-.29-1.8-.33C14.97 3.81 14.66 3.8 12 3.8zm0 3.06a5.14 5.14 0 1 1 0 10.28 5.14 5.14 0 0 1 0-10.28zm0 1.8a3.34 3.34 0 1 0 0 6.68 3.34 3.34 0 0 0 0-6.68zm5.4-3.2a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4z"/></svg></a>
+  <a href="https://www.tiktok.com/@oba_lola07?_r=1&_t=ZS-97F11d8Rej6" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M16.7 2h-3.4v13.4c0 1.5-1.2 2.7-2.7 2.7a2.7 2.7 0 0 1-2.7-2.7 2.7 2.7 0 0 1 2.7-2.7c.3 0 .6.05.9.14V9.3a6 6 0 0 0-.9-.07A6.1 6.1 0 0 0 4.5 15.3a6.1 6.1 0 0 0 6.1 6.1 6.1 6.1 0 0 0 6.1-6.1V8.6a8.3 8.3 0 0 0 4.8 1.5V6.7a4.9 4.9 0 0 1-4.8-4.7z"/></svg></a>
+  <a href="mailto:damilolaa050@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24"><path d="M2 5h20v14H2V5zm2.4 2 7.6 6 7.6-6H4.4zM20 8.2l-8 6.3-8-6.3V17h16V8.2z"/></svg></a>
+</div>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lightbox" id="lightbox">
+  <button class="lb-close" id="lbClose">Close ✕</button>
+  <button class="lb-nav lb-prev" id="lbPrev">‹</button>
+  <img id="lbImg" src="" alt="">
+  <button class="lb-nav lb-next" id="lbNext">›</button>
+  <div class="lb-cap" id="lbCap"></div>
+</div>
+
+<!-- ============ VIDEO LIGHTBOX ============ -->
+<div class="video-lightbox" id="videoLightbox">
+  <button class="vlb-close" id="vlbClose">Close ✕</button>
+  <button class="vlb-nav vlb-prev" id="vlbPrev">‹</button>
+  <video id="vlbVideo" controls playsinline preload="metadata"></video>
+  <button class="vlb-nav vlb-next" id="vlbNext">›</button>
+  <div class="vlb-cap" id="vlbCap"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
