@@ -267,7 +267,35 @@ document.addEventListener('keydown', e => {
   if (e.key === 'ArrowRight') { filmIndex = (filmIndex+1) % filmSet.length; updateVideoLightbox(); }
   if (e.key === 'ArrowLeft') { filmIndex = (filmIndex-1+filmSet.length) % filmSet.length; updateVideoLightbox(); }
 });
+/* ---------------- SMART VIDEO LOADING (Intersection Observer) --------------------*/
+const splashVideo = document.querySelector('.splash video');
+const filmVideos = document.querySelectorAll('.film-card video');
 
+if (splashVideo) {
+  const splashObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && !splashVideo.hasAttribute('data-loaded')) {
+        splashVideo.autoplay = true;
+        splashVideo.preload = 'auto';
+        splashVideo.setAttribute('data-loaded', 'true');
+        splashObserver.unobserve(splashVideo);
+      }
+    });
+  }, { threshold: 0.1 });
+  splashObserver.observe(splashVideo);
+}
+
+if (filmVideos.length > 0) {
+  const filmObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && !entry.target.hasAttribute('data-loaded')) {
+        entry.target.preload = 'metadata';
+        entry.target.setAttribute('data-loaded', 'true');
+      }
+    });
+  }, { threshold: 0.2, rootMargin: '50px' });
+  filmVideos.forEach(v => filmObserver.observe(v));
+}
 /* ---------------- SPLASH / LOADER ---------------- */
 const splash = document.getElementById('splash');
 const loaderFill = document.getElementById('loaderFill');
